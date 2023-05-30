@@ -1,0 +1,25 @@
+h1
+{
+    font-family: 'Bokor', cursive;
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    text-align: center;
+    color: green;
+}
+
+#puntos
+{
+    font-size: 200%;
+    font-family: 'Bokor', cursive;
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Edu TAS Beginner', cursive;
+    border: 2px;
+    border-style: groove;
+    background:  silver;
+    color: green;
+}
+

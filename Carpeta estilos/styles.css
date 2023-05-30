@@ -1,0 +1,104 @@
+:root
+{
+    --w: calc(70vw/ 6);
+    --h: calc(180vh/ 4);
+    --wPhone: calc(55vw / 6);
+    --hPhone: calc(55vh / 4);
+}
+
+*
+{
+    transition: all 0.5s;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    -webkit-perspective: 1000;
+    background: url(../Midgart.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Chakra Petch', sans-serif;
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Dancing Script', cursive;
+
+    
+    
+
+}
+.area-tarjeta, .tarjeta, .cara
+{
+    cursor: pointer;
+    width: var(--w);
+    min-width: 80px;
+    height: var(--h);
+    
+}
+
+.tarjeta
+{
+    position: relative;
+    transform-style: preserve-3d;
+    animation: iniciar 2s;
+}
+
+div
+{
+    display: inline-block;
+}
+
+
+
+.trasera
+{
+    background-color: transparent;
+    transform: rotateY(180deg);
+}
+
+.delantera
+{
+    background: linear-gradient(#8FBC8F,#2F4F4F);
+    
+}
+
+.cara
+{
+    position: absolute;
+    backface-visibility: hidden;
+    box-shadow: inset 0 0 0 5px #32CD32;
+    font-size: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.newGame
+{
+    cursor: pointer;
+    background: linear-gradient(#8FBC8F,#2F4F4F);
+    padding: 20px;
+    border-radius: 6px;
+    border-color: #FDF5E6 solid;
+    border-style: double;
+    font-size: double;
+}
+
+@keyframes iniciar
+{
+    20%,90%
+    {
+        transform: rotateY(180deg);
+    }
+    0%, 100%
+    {
+        transform: rotateY(0deg);
+    }
+}
